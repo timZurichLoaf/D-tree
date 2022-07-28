@@ -25,15 +25,15 @@ def write_result(testcase, result_type, data, method):
         raise ValueError("invalid result type.")
 
     if testcase not in ['wiki', 'messages', 'dnc', 'call', 'fb',
-                        'tech', 'enron', 'stackoverflow', 'youtube', 'dblp',  'scholar']:
+                        'tech', 'enron', 'stackoverflow', 'youtube', 'dblp',  'scholar', 'osmswitzerland']:
         raise ValueError(" testcase not in ['wiki', 'messages', 'dnc', 'call', 'fb', "
-                         "'tech', 'enron', 'stackoverflow', 'youtube', 'dblp',  'scholar']")
+                         "'tech', 'enron', 'stackoverflow', 'youtube', 'dblp',  'scholar', 'osmswitzerland']")
 
     if method not in ['UnionFind', 'Dtree', 'DBL']:
         raise ValueError("method not in ['UnionFind', 'Dtree', 'DBL']")
 
     labels = {'wiki': 'WI', 'messages': 'MS', 'dnc': 'DNC', 'call': 'CA', 'fb': 'FB',
-             'tech': 'Tech', 'enron': 'EN', 'stackoverflow': 'ST', 'youtube': 'YT', 'scholar': 'SC'}
+             'tech': 'Tech', 'enron': 'EN', 'stackoverflow': 'ST', 'youtube': 'YT', 'scholar': 'SC', 'osmswitzerland': 'osmswitzerland'}
 
     testcase_ = labels[testcase]
 
@@ -98,8 +98,8 @@ if __name__ == '__main__':
     update_Dtree = timer() - start
     print("inserting edges in DTree uses %f" %update_Dtree)
 
-    r = np.zeros(100000000, dtype = int)
-    p = np.zeros(100000000, dtype = int)
+    r = np.zeros(10000000000, dtype = int)
+    p = np.zeros(10000000000, dtype = int)
 
     start = timer()
     for a, b, _ in records:

@@ -1,0 +1,17 @@
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+
+(base) ZHENGs-MacBook-Pro:D-tree zhengluo$  cd /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree ; /usr/bin/env /opt/anaconda3/bin/python /Users/zhengluo/.vscode/extensions/ms-python.python-2022.10.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 58657 -- /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree/evaluate_insertion_only.py osmswitzerland 
+inserting edges in DTree uses 4.919869
+inserting edges in Union Find uses 0.480175
+(base) ZHENGs-MacBook-Pro:D-tree zhengluo$  cd /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree ; /usr/bin/env /opt/anaconda3/bin/python /Users/zhengluo/.vscode/extensions/ms-python.python-2022.10.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 58666 -- /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree/evaluate_insertion_only.py osmswitzerland 
+inserting edges in DTree uses 4.670035
+inserting edges in Union Find uses 0.453040
+inserting edges in DBL takes 158.158990 seconds.
+(base) ZHENGs-MacBook-Pro:D-tree zhengluo$  cd /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree ; /usr/bin/env /opt/anaconda3/bin/python /Users/zhengluo/.vscode/extensions/ms-python.python-2022.10.0/pythonFiles/lib/python/debugpy/adapter/../../debugpy/launcher 58690 -- /Users/zhengluo/Documents/UZH\ MSI\ Local/Independent\ Study/D-tree/evaluate_insertion_only.py osmswitzerland 
+inserting edges in DTree uses 4.558870
+inserting edges in Union Find uses 0.451427
+inserting edges in DBL takes 155.758073 seconds.
+50000000 all pairs of nodes are generated.

@@ -11,8 +11,8 @@ def loadGraph(testcase):
     if testcase == "osmswitzerland":
         lines = open("datasets/" + testcase, 'r').readlines()
         for line in lines:
-            items = line.rstrip().split()
-            if items[0] == items[1]:
+            items = line.rstrip().split(',')
+            if int(items[0]) == int(items[1]):
                 continue
             u, v = order(int(items[0]), int(items[1]))
             edges.append([u, v, 1])
@@ -35,7 +35,7 @@ def loadGraph(testcase):
             edges.append([u, v, int(items[2])])
         edges.sort(key = lambda x: x[2])
     elif testcase == 'dnc':
-        lines = open("datasets/" + testcase, 'r').readlines()
+        lines = open("datasets/" + testcase, 'r', encoding='utf-8-sig').readlines()
         for line in lines:
             items = line.rstrip().split(',')
             if items[0] == items[1]:
